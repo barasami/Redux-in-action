@@ -5,6 +5,7 @@ const mathSlice=createSlice({
     initialState:{Ans:0},
     reducers:{
         Add (state,action) {
+            
 
         },
         Multiply (state,action) {

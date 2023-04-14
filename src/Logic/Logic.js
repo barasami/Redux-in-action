@@ -5,6 +5,18 @@ function Logic() {
     const submittedForm=(e)=>{
         e.preventDefault()
     }
+    const Addme=()=>{
+        console.log('added');
+
+    }
+    const SubtractMe=()=>{
+        console.log('subtracted');
+
+    }
+    const MultiplyMe=()=>{
+        console.log('multiplied');
+
+    }
   return (
     <div className="App">
       <form className='form' onSubmit={submittedForm}>
@@ -21,9 +33,9 @@ function Logic() {
                 <input  className='inputs' placeholder='Your Answer...'></input>
             </div>
             <div className='btns'>
-                <button className='add'>Add</button>
-                <button className='subtract'>Subtract</button>
-                <button className='multiply'>Multiply</button>
+                <button className='add' onClick={Addme}>Add</button>
+                <button className='subtract' onClick={SubtractMe}>Subtract</button>
+                <button className='multiply' onClick={MultiplyMe}>Multiply</button>
             </div>
       </form>
     </div>
