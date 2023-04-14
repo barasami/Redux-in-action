@@ -1,20 +1,8 @@
 *{
+  box-sizing: border-box;
   padding: 0px;
   margin: 0px;
-  box-sizing: border-box;
-  font-family: sans-serif;
 }
-.App{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-}
-.form{
-  margin-top: 25%;
-  margin-bottom: 25%;
-  position: fixed;
-  align-items: center;
-  justify-content: center;
-  
+.paper{
+  padding: 2em;
 }

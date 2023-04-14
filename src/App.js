@@ -1,22 +1,12 @@
 import './App.css';
-
+import Logic from './Logic/Logic';
+import { Paper } from '@mui/material';
 function App() {
+  
   return (
-    <div className="App">
-      <form className='form'>
-        <div>
-          <input type='number' placeholder='Enter numb1'></input>
-        </div>
-        <div>
-          <input type='number' placeholder='Enter numb2'></input>
-        </div>
-        <div>
-          <button>Add</button>
-          <button>Subtract</button>
-          <button>Multiply</button>
-        </div>
-      </form>
-    </div>
+    <Paper elevation={2} className='paper'>
+      <Logic/>
+    </Paper>
   );
 }
 

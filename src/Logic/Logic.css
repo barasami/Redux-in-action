@@ -1,0 +1,76 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  .App{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .form{
+    margin-top: 25%;
+    margin-bottom: 25%;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .numb1{
+    margin-bottom: 2em;
+  
+  }
+  .numb2{
+    margin-bottom: 2em;
+  }
+  .answer{
+    margin-bottom: 2em;
+  }
+  .btns{
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-between;
+  }
+  .add{
+    padding: .2em;
+    font-family: cursive;
+    background-color: seagreen;
+    color: white;
+    border-radius: 2px;
+    border: none;
+  }
+  .subtract{
+    padding: .2em;
+    font-family: cursive;
+    background-color: seagreen;
+    color: white;
+    border-radius: 2px;
+    border: none;
+  }
+  .inputs{
+    padding: .4em;
+    border: 1px solid seagreen;
+    border-radius: 3px;
+  }
+  .inputs:focus{
+    border: none;
+  }
+  .head{
+    text-decoration: underline;
+    font-weight: lighter;
+    color: seagreen;
+    text-transform: capitalize;
+  }
+  .title{
+    margin-bottom: 2em;
+  }
+  .multiply{
+    padding: .2em;
+    font-family: cursive;
+    background-color: seagreen;
+    color: white;
+    border-radius: 2px;
+    border: none;
+  }
