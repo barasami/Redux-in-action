@@ -1,22 +1,23 @@
 import React from 'react'
 import './Logic.css'
+import { useDispatch } from 'react-redux'
+import { mathSliceActions } from '../Store/HandleMath_Slice'
 
 function Logic() {
-    
+    const dispatch=useDispatch()
     
     const submittedForm=(e)=>{
         e.preventDefault()
     }
-    const AddMe=(e)=>{
-        console.log('added');
-
+    const AddMe=()=>{
+        dispatch(mathSliceActions.Add())
     }
     const SubtractMe=()=>{
-        console.log('subtracted');
+        dispatch(mathSliceActions.Subtract())
 
     }
     const MultiplyMe=()=>{
-        console.log('multiplied');
+        dispatch(mathSliceActions.Multiply())
 
     }
     let ans=20
