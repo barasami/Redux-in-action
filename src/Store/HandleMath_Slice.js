@@ -7,15 +7,21 @@ const mathSlice=createSlice({
     },
     reducers:{
         Add (state,action) {
-           console.log('hello add');
+           const numb1=action.payload;
+           const numb2=action.payload;
+           state.Ans=numb1 + numb2
 
         },
         Multiply (state,action) {
-            console.log('hello multiply');
+            const numb1=action.payload;
+            const numb2=action.payload;
+            state.Ans=numb1 * numb2
 
         },
         Subtract (state,action) {
-                console.log('hello subtract');
+            const numb1=action.payload;
+            const numb2=action.payload;
+            state.Ans=numb1 - numb2
         }
     }
 })
