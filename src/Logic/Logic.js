@@ -33,7 +33,7 @@ function Logic() {
     }
     const MultiplyMe=()=>{
         dispatch(mathSliceActions.Multiply(
-            firstnumb,
+            secondnumb,
             secondnumb
         ))
 
