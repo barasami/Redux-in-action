@@ -26,7 +26,11 @@
     margin-bottom: 2em;
   }
   .answer{
-    margin-bottom: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: .5em;
+    color: darkmagenta;
   }
   .btns{
     margin-top: 2em;
@@ -53,6 +57,13 @@
     padding: .4em;
     border: 1px solid seagreen;
     border-radius: 3px;
+  }
+  .answer2{
+    padding: .4em;
+    border: 1px solid seagreen;
+    border-radius: 3px;
+    display: flex;
+    justify-content: stretch;
   }
   .inputs:focus{
     border: none;

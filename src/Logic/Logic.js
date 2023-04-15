@@ -2,10 +2,12 @@ import React from 'react'
 import './Logic.css'
 
 function Logic() {
+    
+    
     const submittedForm=(e)=>{
         e.preventDefault()
     }
-    const Addme=()=>{
+    const AddMe=(e)=>{
         console.log('added');
 
     }
@@ -17,6 +19,7 @@ function Logic() {
         console.log('multiplied');
 
     }
+    let ans=20
   return (
     <div className="App">
       <form className='form' onSubmit={submittedForm}>
@@ -27,13 +30,13 @@ function Logic() {
                 <input type='number' className='inputs'  placeholder='Enter numb1'></input>
             </div>
             <div className='numb2'>
-                <input type='number' className='inputs' placeholder='Enter numb2'></input>
+                <input type='number' className='inputs'  placeholder='Enter numb2'></input>
             </div>
-            <div className='answer'>
-                <input  className='inputs' placeholder='Your Answer...'></input>
+            <div className='answer2'>
+                <text type='' className='answer'>Your Answer: {ans}</text>
             </div>
             <div className='btns'>
-                <button className='add' onClick={Addme}>Add</button>
+                <button className='add' onClick={AddMe}>Add</button>
                 <button className='subtract' onClick={SubtractMe}>Subtract</button>
                 <button className='multiply' onClick={MultiplyMe}>Multiply</button>
             </div>
