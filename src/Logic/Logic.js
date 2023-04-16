@@ -7,6 +7,7 @@ function Logic() {
     const[firstnumb,setNumb]=useState(0)
     const[secondnumb,setSecondNumb]=useState(0)
     let selector=useSelector((state)=>state.mathslice.Ans)
+   
     const firstNumb=(e)=>{
         setNumb(e.target.value)
     }
@@ -18,23 +19,24 @@ function Logic() {
     const submittedForm=(e)=>{
         e.preventDefault()
     }
+
+    let fn=Number(firstnumb)
+    let sn=Number(secondnumb)
+    
     const AddMe=()=>{
         dispatch(mathSliceActions.Add(
-            firstnumb,
-            secondnumb
+           fn + sn
         ))
     }
     const SubtractMe=()=>{
         dispatch(mathSliceActions.Subtract(
-            {firstnumb},
-            {secondnumb}
+           fn-sn
         ))
 
     }
     const MultiplyMe=()=>{
         dispatch(mathSliceActions.Multiply(
-            secondnumb,
-            secondnumb
+          fn*sn
         ))
 
     }
