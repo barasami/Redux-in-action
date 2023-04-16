@@ -53,7 +53,7 @@ function Logic() {
                 <input type='number' className='inputs' value={secondnumb} onChange={secondNumb} placeholder='Enter numb2'/>
             </div>
             <div className='answer2'>
-                <text type='' className='answer'>Your Answer: {selector}</text>
+                <div type='' className='answer'>Your Answer: {selector}</div>
             </div>
             <div className='btns'>
                 <button className='add' onClick={AddMe}>Add</button>
